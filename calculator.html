@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic-Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="Display" disabled>
+        <div class="buttons">
+            <button onclick="ClearAllValue('AC')">AC</button>
+            <button onclick="DeleteValue('Del')">Del</button>
+            <button onclick="AppendToValue('(')">(</button>
+            <button onclick="AppendToValue(')')">)</button>
+            <button onclick="AppendToValue('{')">{</button>
+            <button onclick="AppendToValue('}')">}</button>
+            <button onclick="AppendToValue('[')">[</button>
+            <button onclick="AppendToValue(']')">]</button>
+            <button onclick="CalculateSquareRoot()"><p>&#8730;</p></button>
+            <button onclick="CalculateCubeRoot()"><p>&#8731;</p></button>
+            <button onclick="AppendToValue('**')">^</button>
+            <button onclick="AppendToValue('%')">%</button>
+            <button onclick="AppendToValue('*')">*</button>
+            <button onclick="AppendToValue('/')">/</button>
+            <button onclick="AppendToValue('+')">+</button>
+            <button onclick="AppendToValue('-')">-</button>
+            <button onclick="AppendToValue('9')">9</button>
+            <button onclick="AppendToValue('8')">8</button>
+            <button onclick="AppendToValue('7')">7</button>
+            <button onclick="AppendToValue('6')">6</button>
+            <button onclick="AppendToValue('5')">5</button>
+            <button onclick="AppendToValue('4')">4</button>
+            <button onclick="AppendToValue('3')">3</button>
+            <button onclick="AppendToValue('2')">2</button>
+            <button onclick="AppendToValue('1')">1</button>
+            <button onclick="AppendToValue('0')">0</button>
+            <button onclick="AppendToValue('.')">.</button>
+            <button onclick="CalculateHere('=')">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
