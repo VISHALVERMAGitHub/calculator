@@ -11,3 +11,4 @@ COPY . /usr/share/nginx/html
 EXPOSE 80
 
 # Nginx server start hoga (default command se)
+CMD ["nginx", "-g", "daemon off;"]
