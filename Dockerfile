@@ -3,10 +3,14 @@ FROM nginx:alpine
 
 # Work directory set kar rahe hain
 WORKDIR /usr/share/nginx/html
+# Default files delete
+RUN rm -rf /usr/share/nginx/html/*
 
-# Apne local project ke files ko container me copy kar rahe hain
+# Custom files copy 
 COPY . /usr/share/nginx/html
 
+# Nginx configuration replace 
+COPY nginx-custom.conf /etc/nginx/conf.d/default.conf
 # Port expose kar rahe hain
 EXPOSE 80
 
